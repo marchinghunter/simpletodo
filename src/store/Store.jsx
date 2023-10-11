@@ -19,6 +19,7 @@ const ContextProvider = ({ children }) => {
       return newTodos;
     });
   };
+  
   const deleteTodo = (id) => {
     setTodoList((prev) => {
       let newTodo = prev.filter((item) => item.id !== id);
